@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:spotify_greenroom/routes/routes.dart';
+import 'package:spotify_greenroom/ui/home/Home.dart';
 import 'package:spotify_greenroom/ui/intro_screen.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -13,11 +14,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         type: PageTransitionType.fade,
       );
 
-    // case homeViewRoute:
-    //   return PageTransition(
-    //     child: HomeScreen(),
-    //     type: PageTransitionType.fade,
-    //   );
+    case homeViewRoute:
+      return PageTransition(
+        child: Home(),
+        type: PageTransitionType.fade,
+      );
 
     // case testViewRoute:
     //   return PageTransition(
