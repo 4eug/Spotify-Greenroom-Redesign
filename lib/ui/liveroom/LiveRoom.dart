@@ -97,6 +97,23 @@ class LiveRoom extends StatelessWidget {
                   stops: [0.2, 0.5])),
           child: Column(
             children: [
+              Text(
+                "👋Welcome to Greenroom!",
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                "First Room!",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.greenAccent[700],
+                ),
+              ),
+              SizedBox(height: 10),
               Expanded(
                 child: GridView.builder(
                   padding: EdgeInsets.all(12),
