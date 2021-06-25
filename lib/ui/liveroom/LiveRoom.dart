@@ -122,26 +122,32 @@ class LiveRoom extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(width: 20),
-                    CircleAvatar(
-                      radius: 40,
-                      backgroundColor: Colors.white,
-                      foregroundColor: Colors.black,
-                      child: Icon(
-                        CupertinoIcons.hand_raised,
-                        size: 50,
+                    InkWell(
+                      child: CircleAvatar(
+                        radius: 40,
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.black,
+                        child: Icon(
+                          CupertinoIcons.hand_raised,
+                          size: 50,
+                        ),
                       ),
+                      onTap: () {},
                     ),
                     SizedBox(
                       width: 10,
                     ),
-                    CircleAvatar(
-                      radius: 25,
-                      backgroundColor: gradientStartColor,
-                      foregroundColor: Colors.white,
-                      child: Icon(
-                        Icons.share,
-                        size: 25,
+                    InkWell(
+                      child: CircleAvatar(
+                        radius: 25,
+                        backgroundColor: greycolor,
+                        foregroundColor: Colors.white,
+                        child: Icon(
+                          Icons.share,
+                          size: 25,
+                        ),
                       ),
+                      onTap: () {},
                     ),
                   ],
                 ),
