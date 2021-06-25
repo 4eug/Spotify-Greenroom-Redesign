@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:spotify_greenroom/ui/intro_screen.dart';
+import 'package:spotify_greenroom/ui/liveroom/LiveRoom.dart';
 import 'package:spotify_greenroom/utils/constants.dart';
 import 'package:spotify_greenroom/widgets/Squircle_shape.dart';
 
@@ -112,7 +112,7 @@ class ColSquircle extends StatelessWidget {
               context,
               MaterialPageRoute(
                 fullscreenDialog: true,
-                builder: (_) => IntroScreen(),
+                builder: (_) => LiveRoom(),
               ),
             );
           },

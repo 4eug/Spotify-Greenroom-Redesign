@@ -98,6 +98,32 @@ class Home extends StatelessWidget {
           ),
         ),
       ]),
+      bottomNavigationBar: DecoratedBox(
+        decoration: BoxDecoration(
+          color: gradientEndColor,
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 10),
+          child: SafeArea(
+            top: false,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(
+                  icon: Icon(Icons.home),
+                  color: Colors.white,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(Icons.person),
+                  color: Colors.white,
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
