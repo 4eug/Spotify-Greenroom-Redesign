@@ -9,8 +9,8 @@ class HomeRoomItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 20),
-      padding: EdgeInsets.fromLTRB(30, 30, 30, 50),
+      margin: EdgeInsets.only(bottom: 5),
+      padding: EdgeInsets.fromLTRB(20, 20, 20, 50),
       decoration: BoxDecoration(
         gradient: LinearGradient(
             colors: [gradientStartColor, greycolor],

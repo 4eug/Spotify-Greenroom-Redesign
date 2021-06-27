@@ -11,28 +11,28 @@ class LiveRoom extends StatelessWidget {
   Widget build(BuildContext context) {
     final members = [
       LiveRoomMember(
-        name: "Abilgal",
+        name: "Ivan",
         isMuted: false,
         color: ProfileColors.black,
       ),
       LiveRoomMember(
-        name: "Daniel",
+        name: "Sharon",
         color: ProfileColors.amber,
       ),
       LiveRoomMember(
-        name: "Samantha",
+        name: "Rick",
         color: ProfileColors.white,
       ),
       LiveRoomMember(
-        name: "Aishat",
+        name: "Jude",
         color: ProfileColors.yellow,
       ),
       LiveRoomMember(
-        name: "Ruth",
+        name: "Liz",
         color: ProfileColors.green,
       ),
       LiveRoomMember(
-        name: "Rich",
+        name: "Sandy",
         color: ProfileColors.red,
       ),
       LiveRoomMember(
@@ -41,17 +41,17 @@ class LiveRoom extends StatelessWidget {
         color: ProfileColors.blue,
       ),
       LiveRoomMember(
-        name: "Mercy",
+        name: "Bethel",
         isNewMember: true,
         color: ProfileColors.white,
       ),
       LiveRoomMember(
-        name: "Tim",
+        name: "Sam",
         isNewMember: true,
         color: ProfileColors.purple,
       ),
       LiveRoomMember(
-        name: "Ed",
+        name: "Tommy",
         isNewMember: true,
         color: ProfileColors.yellow,
       ),
@@ -61,7 +61,7 @@ class LiveRoom extends StatelessWidget {
         color: ProfileColors.green,
       ),
       LiveRoomMember(
-        name: "Lauret",
+        name: "Mike",
         isNewMember: true,
         color: ProfileColors.purple,
       ),
@@ -135,37 +135,56 @@ class LiveRoom extends StatelessWidget {
                   color: gradientEndColor,
                   borderRadius: BorderRadius.only(),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                child: Column(
                   children: [
-                    SizedBox(width: 20),
-                    InkWell(
-                      child: CircleAvatar(
-                        radius: 40,
-                        backgroundColor: Colors.white,
-                        foregroundColor: Colors.black,
-                        child: Icon(
-                          CupertinoIcons.hand_raised,
-                          size: 50,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(width: 20),
+                        InkWell(
+                          child: CircleAvatar(
+                            radius: 40,
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.black,
+                            child: Icon(
+                              CupertinoIcons.hand_raised,
+                              size: 50,
+                            ),
+                          ),
+                          onTap: () {},
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        InkWell(
+                          child: CircleAvatar(
+                            radius: 25,
+                            backgroundColor: sharecolor,
+                            foregroundColor: Colors.white,
+                            child: Icon(
+                              Icons.share,
+                              size: 25,
+                            ),
+                          ),
+                          onTap: () {},
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 10),
+                    Positioned(
+                      right: 10,
+                      left: 10,
+                      child: Container(
+                        width: 100,
+                        child: Text(
+                          "Ask To Speak",
+                          style: TextStyle(color: Colors.white),
                         ),
                       ),
-                      onTap: () {},
                     ),
                     SizedBox(
                       width: 10,
-                    ),
-                    InkWell(
-                      child: CircleAvatar(
-                        radius: 25,
-                        backgroundColor: greycolor,
-                        foregroundColor: Colors.white,
-                        child: Icon(
-                          Icons.share,
-                          size: 25,
-                        ),
-                      ),
-                      onTap: () {},
-                    ),
+                    )
                   ],
                 ),
               ),

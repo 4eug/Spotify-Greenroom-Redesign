@@ -12,7 +12,55 @@ class ColSquircle extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(height: 10),
+        Row(
+          children: [
+            Container(
+              height: 20,
+              width: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: sharecolor,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    CupertinoIcons.chart_bar_fill,
+                    size: 10,
+                    color: Colors.greenAccent[700],
+                  ),
+                  SizedBox(width: 3),
+                  Text(
+                    "LIVE",
+                    style: TextStyle(color: Colors.white, fontSize: 12),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              width: 3,
+            ),
+            Container(
+              height: 20,
+              width: 100,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: sharecolor,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(width: 3),
+                  Text(
+                    "💙 FlutterDevelopers",
+                    style: TextStyle(color: Colors.white, fontSize: 12),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: 15),
         Row(
           children: [
             Squircle(),
@@ -75,7 +123,7 @@ class ColSquircle extends StatelessWidget {
         Text(
           "First Room!",
           style: TextStyle(
-            fontSize: 12,
+            fontSize: 15,
             fontWeight: FontWeight.w700,
             color: Colors.greenAccent[700],
           ),
@@ -84,7 +132,7 @@ class ColSquircle extends StatelessWidget {
         Text(
           "👋Welcome to Greenroom!",
           style: TextStyle(
-            fontSize: 22,
+            fontSize: 25,
             fontWeight: FontWeight.w700,
             color: Colors.white,
           ),
@@ -98,23 +146,21 @@ class ColSquircle extends StatelessWidget {
           ),
         ),
         SizedBox(height: 15),
-        new InputChip(
-          backgroundColor: gradientStartColor,
-          label: new Text(
-            "Join room",
-            style: TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              primary: sharecolor,
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30))),
+          child: Text(
+            'Join room',
+            style: TextStyle(fontSize: 14),
           ),
           onPressed: () {
             Navigator.push(
-              context,
-              MaterialPageRoute(
-                fullscreenDialog: true,
-                builder: (_) => LiveRoom(),
-              ),
-            );
+                context,
+                MaterialPageRoute(
+                    fullscreenDialog: true, builder: (_) => LiveRoom()));
           },
         )
       ],

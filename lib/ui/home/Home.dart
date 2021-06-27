@@ -60,23 +60,37 @@ class Home extends StatelessWidget {
       ]),
       bottomNavigationBar: DecoratedBox(
         decoration: BoxDecoration(
-          color: gradientEndColor,
+          color: greycolor,
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 10),
+          padding: EdgeInsets.fromLTRB(1, 5, 1, 5),
           child: SafeArea(
             top: false,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 IconButton(
                   icon: Icon(Icons.home),
                   color: Colors.white,
+                  iconSize: 30,
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: Icon(Icons.person),
+                  icon: Icon(CupertinoIcons.search),
                   color: Colors.white,
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(CupertinoIcons.bell),
+                  color: Colors.white,
+                  iconSize: 30,
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: Icon(CupertinoIcons.person),
+                  color: Colors.white,
+                  iconSize: 30,
                   onPressed: () {},
                 ),
               ],
