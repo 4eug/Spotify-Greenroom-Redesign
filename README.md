@@ -5,7 +5,6 @@ A quick Flutter Clone of Spotify's Greenroom(Clubhouse Competitor) Redesign by M
 ## Screenshots
 
 <table>
-  <>
     <td>
      <img src="assets/screenshots/flutter_03.png/" height="500em" />
     </td>
