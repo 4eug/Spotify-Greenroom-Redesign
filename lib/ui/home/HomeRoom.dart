@@ -13,7 +13,7 @@ class HomeRoomItem extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(30, 30, 30, 50),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-            colors: [gradientStartColor, gradientEndColor],
+            colors: [gradientStartColor, greycolor],
             begin: Alignment.topLeft,
             end: Alignment.bottomCenter,
             stops: [0.1, 0.9]),
