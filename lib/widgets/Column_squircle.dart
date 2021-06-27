@@ -139,7 +139,7 @@ class ColSquircle extends StatelessWidget {
         ),
         SizedBox(height: 10),
         Text(
-          "Pete Benson, Kaeton Sanchez, Daniel Greer & 120 others are here",
+          "Ivan, Sharon Bans, Mike Greer, Bethel Love , Tommy, Sam & 120 others are here",
           style: TextStyle(
             fontSize: 12,
             color: Colors.white,

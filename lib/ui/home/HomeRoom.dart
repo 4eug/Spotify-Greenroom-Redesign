@@ -10,13 +10,13 @@ class HomeRoomItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(bottom: 5),
-      padding: EdgeInsets.fromLTRB(20, 20, 20, 50),
+      padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
       decoration: BoxDecoration(
         gradient: LinearGradient(
             colors: [gradientStartColor, greycolor],
             begin: Alignment.topLeft,
             end: Alignment.bottomCenter,
-            stops: [0.1, 0.9]),
+            stops: [0.1, 0.65]),
         borderRadius: BorderRadius.circular(24),
       ),
       child: Column(
