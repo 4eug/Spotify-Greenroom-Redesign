@@ -1,4 +1,3 @@
-import 'package:floating_action_row/floating_action_row.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify_greenroom/ui/home/HomeRoom.dart';
@@ -12,19 +11,6 @@ class Home extends StatelessWidget {
     // ignore: unused_local_variable
     final theme = Theme.of(context);
     // ignore: deprecated_member_use
-    var children = List<Widget>();
-    children.add(FloatingActionRowButton(
-      icon: Icon(
-        Icons.add,
-        color: Colors.black,
-        size: 35,
-      ),
-      onTap: () {},
-    ));
-    children.add(InkWell(
-      child: Text("New Room"),
-      onTap: () {},
-    ));
 
     final list = [
       HomeRoomItem(),
@@ -74,11 +60,14 @@ class Home extends StatelessWidget {
           ),
         ),
       ]),
-      floatingActionButton: FloatingActionRow(
-        children: children,
-        height: 45,
-        padding: EdgeInsets.symmetric(vertical: 3, horizontal: 15),
-        color: lightgreen,
+      floatingActionButton: FloatingActionButton.extended(
+        backgroundColor: lightgreen,
+        foregroundColor: Colors.black,
+        onPressed: () {
+          // Respond to button press
+        },
+        icon: Icon(Icons.add),
+        label: Text('New room'),
       ),
       bottomNavigationBar: DecoratedBox(
         decoration: BoxDecoration(
