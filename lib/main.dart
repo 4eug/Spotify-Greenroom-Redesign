@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:spotify_greenroom/routes/router.dart';
 import 'package:spotify_greenroom/routes/routes.dart';
 
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           elevation: 0,
-          brightness: Brightness.light,
           backgroundColor: Colors.transparent,
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
         ),
       ),
       debugShowCheckedModeBanner: false,
